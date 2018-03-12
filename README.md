@@ -22,7 +22,7 @@ de diapositivas slider, y un video, en el que siempre se escuchara aunque se est
   
   
   >PHP: Leer todas las fotos de un directorio; una vez con esto puedes realizar un CSS sobre #slider img {}, en mi caso hize un full screen   y quedaron de fondo
-  ```php
+ ```
   <div id="slider">
 		<?php
 		$directorio = opendir("fotos/"); //ruta actual
@@ -37,9 +37,9 @@ de diapositivas slider, y un video, en el que siempre se escuchara aunque se est
 		}			
 		?>	
 		</div>
-    ```
+ ```
     
  
 ![alt text](https://github.com/printepolis/nilo/blob/master/nilo%20(2).jpg)
 
-Es un proyecto pequeño, para hacerse en una tarde. Espero y te sirva de punto de partida
+### Es un proyecto pequeño, para hacerse en una tarde. Espero y te sirva de punto de partida
