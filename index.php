@@ -77,7 +77,7 @@
 		transition: all .4s linear;
 	}
 
-	
+
 	
 	
 	#quienessomos{
@@ -115,7 +115,25 @@
 	#video:hover {
 		opacity:1;
 	}
+
+	#donar {
+		position: fixed;
+		bottom: 10px; right: 10px;
+		border: 0px white solid;
+		padding: 2px;
+
+		width: 350px; 
+		z-index: 1500;
+		background-color: transparent;
+		opacity: 0.7;
+	}
+	#donar:hover {
+		opacity:1;
+	}
 	@media only screen and (max-width:500px) {
+			#donar {
+				top:150px; right:10px; width:100px;
+			}
 			#video {
 		width:200px;}
 
@@ -198,7 +216,15 @@
 </script>
 
 	<div id='contenido'>
+	<div id='donar'>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="S7YMDRC933M68">
+		<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+		<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+		</form>
 
+	</div>
 	<div id='video'>
 		<video controls="controls"  autoplay="autoplay" poster="videos/heroes.jpg" style="width:100%" title="Sin título" loop="loop" onended="var v=this;setTimeout(function(){v.play()},300)">
 		<source src="videos/heroes.m4v" type="video/mp4" />

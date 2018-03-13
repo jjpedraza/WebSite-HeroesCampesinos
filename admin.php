@@ -75,7 +75,7 @@ include("config/html_menu.php"); ?>
         echo "<td>".$f['nombre']."</td>";
         echo "<td><b>".$f['correo']."</td>";
         echo "<td>";
-        echo $f['telefono'];
+        echo $f['tel'];
         echo "</td>";
         echo "<td>";
         echo $f['domicilio'];

@@ -22,15 +22,15 @@ $paginacion= 20;
 
 
 //PARAMETROS DE CONEXION A LA BASE DE DATOS
-	$dbhost = 'localhost';
-	$dbuser = 'c0270506_nilo';
-	$dbpass = 'felimeZI63';
-	$dbname = 'c0270506_nilo';
-
 	// $dbhost = 'localhost';
-	// $dbuser = 'root';
-	// $dbpass = '';
-	// $dbname = 'nilo';
+	// $dbuser = 'c0270506_nilo';
+	// $dbpass = 'felimeZI63';
+	// $dbname = 'c0270506_nilo';
+
+	$dbhost = 'localhost';
+	$dbuser = 'root';
+	$dbpass = '';
+	$dbname = 'nilo';
 
 	$conexion = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 	$acentos = $conexion->query("SET NAMES 'utf8'"); // para los acentos

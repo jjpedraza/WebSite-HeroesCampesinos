@@ -18,6 +18,6 @@ $nitavu="";
  			header("location:../index.php?modo=desktop");
  		}
  	}else {
- 			header("location:../index2.php");
+ 			header("location:../index.php");
  	}
 ?>

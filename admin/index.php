@@ -8,7 +8,7 @@ if (isset($_POST['submit']))
 	$r = $conexion -> query($sql);	if($f = $r -> fetch_array())	
 	{
 		session_start();
-		$_SESSION['user']=$f['username'];	
+		$_SESSION['userx']=$f['username'];	
 		
 		global $nuc;
 		$nuc = $f['nuc'];	
@@ -16,7 +16,7 @@ if (isset($_POST['submit']))
 		header('location:../admin.php');			
 	}else 
 	{
-		historia('','Acceso fallido con nip ');		
+		//historia('','Acceso fallido con nip ');		
 		mensaje("Error en el usuario y nip",'index.php','error');
 	} 
 		
@@ -89,7 +89,7 @@ if (isset($_POST['submit']))
 </head>
 <body >
 <div id='login'>
-	<form action='../login/index.php' method='post'>
+	<form action='../admin/index.php' method='post'>
 		<table width="100%" border=0>
 			<tr><td width=50% align="right" valign="center">Usuario: </td><td width=50%  align="left" valign="center"><input type='text' name='usuario' required="required"></td></tr>
 			<tr><td align="right" valign="center">NIP: </td><td align="left" valign="center"><input type='password' name='pass' required="required"></td></tr>

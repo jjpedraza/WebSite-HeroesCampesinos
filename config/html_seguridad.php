@@ -3,8 +3,8 @@
 
 	
 	session_start();	
-	if (isset($_SESSION['user'])){
-		$nuc = $_SESSION['user']; // refrescamos la variable
+	if (isset($_SESSION['userx'])){
+		$nuc = $_SESSION['userx']; // refrescamos la variable
 	}
 	else
 	{		
