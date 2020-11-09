@@ -1,4 +1,4 @@
-# Proyecto nilo
+# Proyecto WebSite Heroes Campesinos
 Este es un proyecto de pagina web en el que se requeria un entorno completamente visual, donde se tuvieran fotos en modo 
 de diapositivas slider, y un video, en el que siempre se escuchara aunque se estuviese en otra seccion, asi como un apartado para afiliacion.
 
